@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coze Chatbot Test</title>
+</head>
+<body>
+  <h2 style="text-align: center;">🧪 Coze Chatbot 测试页面</h2>
+
+  <!-- 引入 Coze SDK -->
+  <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7500780867254616072',
+      },
+      componentProps: {
+        title: 'Coze',
+      },
+      auth: {
+        type: 'token',
+        token: 'pat_********',
+        onRefreshToken: function () {
+          return 'pat_********'
+        }
+      }
+    });
+  </script>
+</body>
+</html>
