@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coze Chatbot Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coze Chatbot</title>
 </head>
-<body>
-  <h2 style="text-align: center;">🧪 Coze Chatbot 测试页面</h2>
+<body style="margin: 0; padding: 0;">
 
-  <!-- 引入 Coze SDK -->
-  <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
-  <script>
-    new CozeWebSDK.WebChatClient({
-      config: {
-        bot_id: '7500780867254616072',
-      },
-      componentProps: {
-        title: 'Coze',
-      },
-      auth: {
-        type: 'token',
-        token: 'pat_********',
-        onRefreshToken: function () {
-          return 'pat_********'
-        }
-      }
-    });
-  </script>
+  <!-- 页面标题，可删除 -->
+  <h2 style="text-align: center; padding: 1rem; font-family: sans-serif;">
+    💬 欢迎使用 Coze.com 聊天机器人
+  </h2>
+
+  <!-- 嵌入聊天框 -->
+  <iframe
+    src="https://www.coze.com/space/7500772357066473480/bot/7500780867254616072/chat"
+    style="width: 100%; height: 90vh; border: none;"
+    allow="microphone; clipboard-write"
+  ></iframe>
+
 </body>
 </html>
+
